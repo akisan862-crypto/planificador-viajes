@@ -1,6 +1,6 @@
 
 
-
+import { registrarDestino, mostrarItinerario } from './viajes.js';
 //Iniciar la aplicación
 function iniciarApp() {
     // Ejemplo de cómo registrar destinos
