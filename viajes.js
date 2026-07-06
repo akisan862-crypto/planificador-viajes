@@ -27,6 +27,7 @@ const registrarDestino = (destino, fecha, transporte) => {
     } else if (destino === "New York") {
         costoBase = 600;
     }
+
     // Costo adicional por tipo de transporte
   if (transporte === "Avión") {
         costoBase += 200;
@@ -37,9 +38,9 @@ const registrarDestino = (destino, fecha, transporte) => {
     return costoBase;
 
 // Función para mostrar el itinerario de los viajes registrados
-    const mostrarItinerario = () => {
+  const mostrarItinerario = () => {
     // TODO: Recorrer el arreglo de destinos y mostrar la información de cada uno
-    for (let i = 0; i < destinos.length; i++) {
+for (let i = 0; i < destinos.length; i++) {
         const viaje = destinos[i];
         console.log("Destino: " + viaje.destino);
         console.log("Fecha: " + viaje.fecha);
@@ -47,5 +48,4 @@ const registrarDestino = (destino, fecha, transporte) => {
         console.log("Costo: $" + viaje.costo);
         console.log("---------------------------");
     }
-}
-    
+};
